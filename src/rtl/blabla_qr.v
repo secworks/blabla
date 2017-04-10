@@ -8,7 +8,8 @@
 // parallel qr functions.
 //
 //
-// Copyright (c) 2013 Secworks Sweden AB
+// Author: Joachim Strömbergson
+// Copyright (c) 2017 Assured AB
 // All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or
