@@ -8,6 +8,6 @@ The big benefit compared to ChaCha is the doubled block size and thus that the n
 This is of course a HW implementation which means that the number of registers will increase, the logic will increase and the clock frequency will
 be decreased. How much? Too early to say.
 
-Basicslly we take the ChaCha core and change what is needed. This includes the Python model.
+Basically we take the ChaCha core and change what is needed. This includes the Python model.
 
 Here we go...
