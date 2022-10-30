@@ -1,0 +1,30 @@
+CAPI=2:
+
+name : secworks:crypto:blabla
+
+filesets:
+  rtl:
+    files:
+      - src/rtl/blabla_qr.v
+      - src/rtl/blabla_core.v
+    file_type : verilogSource
+
+  sky130:
+    files:
+      - data/sky130.tcl
+
+targets:
+  default:
+    filesets: [rtl]
+
+  lint:
+    default_tool : verilator
+    filesets : [rtl]
+    tools:
+      verilator: {mode: lint-only}
+    toplevel: blabla_core
+
+  sky130:
+    default_tool : openlane
+    filesets: [rtl, sky130]
+    toplevel : blabla_core
